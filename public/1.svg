@@ -1,0 +1,31 @@
+<svg
+    className={`${sz}`}
+    viewBox="0 0 48 48"
+    fill="none"
+    aria-hidden="true"
+>
+    <rect
+    x="4"
+    y="8"
+    width="40"
+    height="32"
+    rx="4"
+    className="fill-gray-700"
+    />
+    <circle cx="18" cy="20" r="4" className="fill-gray-500" />
+    <path
+    d="M10 32l9-8 7 6 7-5 5 7"
+    className="stroke-gray-500"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    />
+    <rect
+    x="4"
+    y="8"
+    width="40"
+    height="32"
+    rx="4"
+    className="fill-white/5 animate-pulse"
+    />
+</svg>
