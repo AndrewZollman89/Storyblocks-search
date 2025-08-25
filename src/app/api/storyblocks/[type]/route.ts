@@ -24,6 +24,8 @@ export async function GET(
         url.searchParams.set("project_id", process.env.STORYBLOCKS_PROJECT_ID || "");
         url.searchParams.set("user_id", process.env.STORYBLOCKS_USER_ID || "");
 
+        console.log(url.toString())
+
         const sbRes = await fetch(url.toString(), { cache: "no-store" });
         const json = await sbRes.json();
         return NextResponse.json(json, { status: sbRes.status });

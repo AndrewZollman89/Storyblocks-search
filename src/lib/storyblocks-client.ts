@@ -5,7 +5,7 @@ export async function searchAssets(
 	params: URLSearchParams
 ): Promise<{ assets: ImageAsset[]; total: number }> {
 	const res = await fetch(`/api/storyblocks/${type}?${params.toString()}`, { cache: 'no-store' });
-	if (!res.ok) {
+	if (res.status !== 200) {
 		const errorText = await res.json();
 		throw new Error(`Failed: ${errorText.errors || 'Cannot fetch assets'}`);
 	};
